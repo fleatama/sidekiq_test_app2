@@ -16,6 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 gem 'sidekiq'
+gem 'sinatra', require: false # ダッシュボード利用のため
+gem 'redis-namespace'
 gem 'html2slim'
 gem 'slim-rails'
 gem "bootstrap"
