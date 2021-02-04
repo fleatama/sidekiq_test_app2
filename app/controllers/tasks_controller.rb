@@ -14,6 +14,7 @@ class TasksController < ApplicationController
   def create
     task = Task.new(task_params)
     task.save!
+    SampleJob.perform_later
     redirect_to tasks_url, notice: "タスク「#{task.name}」を登録しました。"
   end
 
